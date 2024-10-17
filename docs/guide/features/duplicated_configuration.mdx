@@ -1,0 +1,94 @@
+# Duplicated Configuration Notification
+
+:::note EMQX offers three ways to change configurations:
+
+- Environment Variables `EMQX__MQTT__IDLE_TIMEOUT=30s`
+- etc/emqx.conf file `mqtt.idle_timeout = 30s`
+- Dashboard or Command line `emqx_ctl conf`
+
+:::
+
+Configuration priority at startup (highest to lowest):
+
+```
+Environment Variables > etc/emqx.conf > Dashboard/CLI
+```
+
+Duplicate configurations can lead to confusing behavior. For instance:
+
+```
+1️⃣. Set mqtt.idle_timeout to 30s in etc/emqx.conf
+2️⃣. Change it to 60s via Dashboard
+3️⃣. Current value is 60s
+4️⃣. EMQX cluster restarts for some reason
+5️⃣. Current value reverts to 30s (`etc/emqx.conf` overrides Dashboard when loading at startup)
+```
+
+To prevent confusion, it's recommended to use a single way for configuring each setting. 
+This way ensures consistency and reduces the risk of conflicting configurations.
+
+EMQX-Guard-Pro monitors for those duplicated configurations and alerts you when detected.
+
+![duplicated-configuration](/images/duplicated_configuration.png)
+## Another Dangerous Scenario
+
+Let's consider a common mistake:
+
+import { Steps } from '@theme';
+
+<Steps>
+### Initial setup:
+
+> Configure authorization in `etc/emqx.conf` to reject unauthorized clients. 
+>
+> This includes setting `deny_action = disconnect`, `no_match = deny`, and `sources = []`.
+
+### Runtime change:
+
+> Configure authorization's sources to `built_in_database` on Dashboard while EMQX is running. 
+>
+> System works as expected.
+
+### Problem occurs:
+> After a long runtime, the cluster restarts. 
+>
+> All clients are unable to log in because the authorization's sources is empty (in `etc/emqx.conf`).
+
+### Solution:
+> Avoid configuring `authorization.sources` in `etc/emqx.conf`. 
+>
+> Instead, configure `authorization.sources` through the Dashboard.
+
+</Steps>
+
+## How To Fix?
+
+- Identify duplicated configurations.
+- Remove these items from `etc/emqx.conf` file.
+- Next time the cluster restarts, it will be normal.
+
+## Best Practices
+
+Use only one way to change each configuration item:
+
+1️⃣. Set `node`, `cluster`, `dashboard` in `etc/emqx.conf` file
+
+2️⃣. Set all other settings via Dashboard/CLI
+
+3️⃣. Add to `etc/emqx.conf` file only if:
+   - The setting is not available in Dashboard/CLI
+   - The setting is not applicable for all nodes in the cluster
+   - The setting is not intended to be changed at runtime
+
+:::tip
+EMQX's dashboard modifies configurations for the entire cluster.
+
+For single node changes:
+- Use `etc/emqx.conf` file
+- Example: Set one node's `log.file.level=debug`, others to `log.file.level=warning` for temporary trace use.
+
+This method is for temporary modifications only.
+
+Long-term use can make configuration management difficult, 
+and it always conflicts with the modifications made in the dashboard.
+:::

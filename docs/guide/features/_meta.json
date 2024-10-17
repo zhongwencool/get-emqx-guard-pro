@@ -1,0 +1,27 @@
+[    
+    {  
+        "type": "file",  
+        "name": "alarm",
+        "label": "🔔 Alarm Notification"
+    },
+    {  
+        "type": "file",  
+        "name": "changed_configuration",
+        "label": "🛠️ Changed Configuration"
+    },  
+    {  
+        "type": "file",  
+        "name": "risk_configuration",
+        "label": "🚨 Risk Configuration"
+    },      
+    {  
+        "type": "file",  
+        "name": "inconsistent_configuration",
+        "label": "🧩 Inconsistent Configuration"
+    },
+    {  
+        "type": "file",  
+        "name": "duplicated_configuration",
+        "label": "🔄 Duplicated Configuration"
+    }    
+]

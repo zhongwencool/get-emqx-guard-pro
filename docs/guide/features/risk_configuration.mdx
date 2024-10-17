@@ -1,0 +1,49 @@
+# Risk Configuration Notification
+
+When EMQX-Guard-Pro boots up, it performs a thorough scan of your configuration settings, 
+looking for any potential risks. 
+If it finds anything concerning, it sends you a friendly heads-up. 
+It's like having a tech-savvy friend who gives you a nudge when something needs your attention.
+
+Here are some key areas EMQX-Guard-Pro keeps an eye on:
+
+## 🍪 Default Cookie Alert:
+    
+Imagine leaving your house key under the doormat. 
+If you're using the default cookie and your EMQX internal ports are exposed to the public internet, 
+it's like inviting unwanted guests. 
+
+EMQX-Guard-Pro warns you about this, helping you avoid potential malicious connections.
+![default-cookie](/images/default_cookie.png)
+
+## 🔐 Authentication Check:
+
+Think of authentication as the bouncer at an exclusive club. Without it, anyone can walk in.
+EMQX-Guard-Pro lets you know if authentication is turned off, 
+preventing a situation where any device could connect to your EMQX broker.
+![risk-authn](/images/risk_authn.png)
+
+## 📝 Log Level Optimization:
+Too much of a good thing can be problematic. If your log level is set too low, 
+it's like having a security camera that records every tiny detail 24/7. 
+This can lead to performance issues due to excessive logging.
+EMQX-Guard-Pro helps you find the right balance.
+
+![risk-log](/images/risk_log.png)
+
+## 🖥️ Dashboard Security:
+Using default passwords for your admin account is like using "password123" for your email. 
+EMQX-Guard-Pro reminds you to change the default dashboard admin password, 
+protecting you from potential attacks.
+![risk-dashboard](/images/risk_dashboard.png)
+## ⛓️ Authorization Source Checks:
+EMQX-Guard-Pro also looks at your authorization settings:
+    - If your authorization.sources is empty but the no_match policy is set to "allow", 
+    it's like leaving your front door wide open. Any client could potentially connect to EMQX.
+    - Conversely, if authorization.sources is empty and the no_match policy is set to "deny", 
+    it's like locking everyone out. No clients would be able to connect to EMQX.
+
+![risk-authz](/images/risk_authz.png)
+
+We're continuously working on expanding our security checks to cover even more aspects of your MQTT broker environment. 
+Stay tuned for future updates that will further enhance your system's safety and performance. 

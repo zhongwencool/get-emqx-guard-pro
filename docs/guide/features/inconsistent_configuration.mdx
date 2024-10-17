@@ -1,0 +1,26 @@
+# Inconsistent Configuration Notification
+EMQX tries to keep all nodes in a cluster configured the same way.
+Sometimes, inconsistencies can occur for reasons beyond control.
+For example, one node might connect to a webhook while another can't.
+This can lead to ongoing problems with updates on the node that failed to connect.
+
+EMQX-Guard-Pro keeps an eye on these inconsistencies and sends alerts.
+This helps you spot which settings are different across all cluster nodes.
+
+![inconsistent-configuration-email](/images/inconsistent_email.png)
+
+## How To Fix ?
+
+Check the status of the cluster configuration synchronization
+
+```
+./bin/emqx_ctl conf cluster_sync status
+```
+Attempt to sync the node with the most comprehensive configuration to other nodes.
+
+```
+./bin/emqx_ctl conf cluster_sync fix 
+```
+:::tip
+This `conf cluster_sync fix` command is available in EMQX v5.8 and later.
+:::

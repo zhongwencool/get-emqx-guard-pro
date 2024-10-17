@@ -1,0 +1,33 @@
+# Real-Time Configuration Change Alerts: Your EMQX Guardian
+
+EMQX-Guard-Pro continuously monitors EMQX configuration changes, 
+providing real-time alerts when configuration changes occur.
+In the world of MQTT, even small changes can have big impacts. 
+EMQX-Guard-Pro acts like a security camera for your configuration, 
+ensuring that any changes are immediately detected and addressed.
+
+Most of EMQX configuration support hot updates, 
+allowing modifications through the dashboard or command line without system downtime. 
+For example, you can change MQTT Settings directly in the dashboard:
+
+![mqtt-setting](/images/mqtt_setting_dashboard.png)
+
+This user-friendly interface is doing some behind-the-scenes magic. 
+It's equivalent to modifying your `etc/emqx.conf` file like this:
+
+```json
+mqtt {
+  max_packet_size = "10MB"
+  max_topic_levels = 20
+}
+```
+
+EMQX-Guard-Pro captures every configuration change and provides real-time notifications for these changes. 
+This ensures that administrators are immediately aware of any changes happening in the system.
+
+
+![mqtt-settting-email](/images/mqtt_setting_email.png "From Email Notification")
+
+
+Ready to upgrade your EMQX management experience? 
+Dive into and [take control of your configuration changes today!](/guide/configuration/index.mdx)

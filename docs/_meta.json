@@ -1,0 +1,12 @@
+[
+  {
+    "text": "Guide",
+    "link": "/guide/start/introduction",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "About",
+    "link": "/about/",
+    "activeMatch": "/about/"
+  }
+]

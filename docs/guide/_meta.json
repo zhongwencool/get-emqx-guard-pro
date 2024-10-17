@@ -1,0 +1,25 @@
+
+[
+        {
+          "type": "dir",
+          "name": "start",
+          "label": "Getting Started",
+          "collapsible": true,
+          "collapsed": false
+        },
+        {
+          "type": "dir",
+          "name": "features",
+          "label": "Features",
+          "collapsible": true,
+          "collapsed": false
+        },   
+        {
+          "type": "dir",
+          "name": "configuration",
+          "label": "Configuration",
+          "collapsible": true,
+          "collapsed": false
+        }             
+]
+
