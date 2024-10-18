@@ -4,7 +4,7 @@ import alignImage from 'rspress-plugin-align-image';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  //base: '/get-emqx-guard-pro/',
+  base: '/get-emqx-guard-pro/',
   title: 'EMQX Guard Pro',
   description: 'EMQX-Guard-Pro is EMQX plugin that keeping your EMQX cluster robust and secure, provides real-time notifications to your email, slack, dingtalk, wechat, feishu and more.',
   icon: '/emqx-guardian.svg',
