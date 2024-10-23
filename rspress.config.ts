@@ -5,7 +5,7 @@ import ga from 'rspress-plugin-google-analytics';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  base: '/get-emqx-guard-pro/',
+  base: process.env.BASE_PATH || '/get-emqx-guard-pro/',
   title: 'EMQX Guard Pro',
   description: 'EMQX-Guard-Pro is EMQX plugin that keeping your EMQX cluster robust and secure, provides real-time notifications to your email, slack, dingtalk, wechat, feishu and more.',
   icon: '/emqx-guardian.svg',

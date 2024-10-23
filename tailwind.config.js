@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { wedgesTW } from "@lemonsqueezy/wedges";
+//import { wedgesTW } from "@lemonsqueezy/wedges";
 
 module.exports = {  
   content: [
