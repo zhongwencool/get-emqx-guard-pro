@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-//import { wedgesTW } from "@lemonsqueezy/wedges";
 
 module.exports = {  
   content: [
@@ -26,5 +25,5 @@ module.exports = {
   },
   //darkMode: "class",
   prefix: 'tw-',
-  plugins: [wedgesTW()],
+  plugins: [],
 };
