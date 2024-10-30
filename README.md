@@ -1,7 +1,7 @@
 # EMQX-Guard-Pro
 
 <p align="center">
-  <img src="docs/public/emqx-guardian-logo.png" alt="EMQX-Guard-Pro Logo" width="800"/>
+  <img src="docs/public/emqx-guardian-logo.png" alt="EMQX-Guard-Pro Logo" width="88"/><img src="docs/public/emqx-guardian-logo.png" alt="EMQX-Guard-Pro Logo" width="88"/><img src="docs/public/emqx-guardian-logo.png" alt="EMQX-Guard-Pro Logo" width="88"/>
 </p>
 
 ## Overview
@@ -13,6 +13,7 @@ EMQX-Guard-Pro is an intelligent monitoring and security plugin for EMQX cluster
 ## Documentation
 
 - [EMQX-Guard-Pro Documentation](https://guard.emqx.dev/)
+- [How to install EMQX-Guard-Pro in one minute](https://guard.emqx.dev/guide/start/getting-started#installation)
 
 ## Community & Support
 
