@@ -37,7 +37,7 @@ Make sure to keep emqx_guard_pro updated to the latest version—no need to rest
 [Join our Discord community to stay updated with the latest news and announcements. 💬](https://discord.gg/d6mEs9VzUc)
 :::
 
-## Next Steps 
+## Next Steps
 
 Once you’ve installed it, tap into the full potential of emqx_guard_pro:
 
@@ -46,5 +46,5 @@ Once you’ve installed it, tap into the full potential of emqx_guard_pro:
 
 These sections guide you through advanced features and integration with your systems.
 
-- [Explore Features →](/docs/features/alarm)
-- [Configure Notification →](/docs/configuration/gmail)
+- [Explore Features →](/docs/EMQX-Guard-Pro/Features/alarm)
+- [Configure Notification →](/docs/EMQX-Guard-Pro/Configuration/Gmail)
