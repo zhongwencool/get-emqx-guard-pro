@@ -1,0 +1,170 @@
+.downloadButtonContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.floatingButton {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.floatingButton:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.downloadCard {
+  position: relative;
+  background-color: #1e1b4b;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90vw;
+  overflow: hidden;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.cardContent {
+  display: flex;
+  padding: 20px;
+}
+
+.cardIcon {
+  flex: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImage {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.cardText {
+  flex: 1;
+  padding-left: 15px;
+}
+
+.cardText h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cardText p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.downloadLink {
+  display: inline-block;
+  background-color: #4f46e5;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.downloadLink:hover {
+  background-color: #4338ca;
+  text-decoration: none;
+  color: white;
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .downloadCard {
+  background-color: #1e1b4b;
+}
+
+html[data-theme='light'] .downloadCard {
+  background-color: #312e81;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .downloadCard {
+    width: 320px;
+  }
+
+  .cardIcon {
+    flex: 0 0 60px;
+  }
+
+  .cardImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardText h3 {
+    font-size: 16px;
+  }
+
+  .cardText p {
+    font-size: 14px;
+  }
+
+  .downloadLink {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+}

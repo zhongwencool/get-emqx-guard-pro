@@ -7,7 +7,7 @@
 
 ## 2. 加载飞书消息卡片模板
 - 打开[飞书卡片搭建工具](https://open.feishu.cn/cardkit)
-- 导入卡片，从这里下载[feishu-card-template.card](https://github.com/zhongwencool/get-emqx_guard_pro/blob/main/feishu-card-template.card)。
+- 导入卡片，从这里下载[feishu-card-template.card](https://github.com/zhongwencool/get-emqx-guard-pro/blob/main/feishu-card-template.card)。
  ![feishu-card-import](/img/feishu-card-import.png)
  - 发布卡片，默认发布时会指定版本为`1.0.0`
  ![feishu-card-publish](/img/feishu-card-publish.png)

@@ -16,7 +16,7 @@ emqx_guard_pro greatly enhances and broadens the alarm features by:
 - Providing easy configuration that doesn’t require any coding
 - Introducing additional new alarm types
 
-If you have suggestions for more useful alarm types, don’t hesitate to open an [ISSUE](https://github.com/zhongwencool/get-emqx_guard_pro/issues).
+If you have suggestions for more useful alarm types, don’t hesitate to open an [ISSUE](https://github.com/zhongwencool/get-emqx-guard-pro/issues).
 
 Here are some examples of alarm notifications you might receive via email:
 

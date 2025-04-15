@@ -8,10 +8,10 @@ emqx_guard_pro is a smart monitoring plugin designed for EMQX MQTT clusters, bui
 
 ### Download via GitHub Releases
 To get started with emqx_guard_pro, simply download the latest version from the
-[the GitHub releases page](https://github.com/zhongwencool/get-emqx_guard_pro/releases).
+[the GitHub releases page](https://github.com/zhongwencool/get-emqx-guard-pro/releases).
 
 ```bash
-curl -L -o emqx_guard_pro-1.1.0.tar.gz https://github.com/zhongwencool/get-emqx_guard_pro/releases/download/1.0.0/emqx_guard_pro-1.1.0.tar.gz
+curl -L -o emqx_guard_pro-1.1.0.tar.gz https://github.com/zhongwencool/get-emqx-guard-pro/releases/download/1.0.0/emqx_guard_pro-1.1.0.tar.gz
 ```
 - Explanation: This command fetches version 1.1.0 and saves it as emqx_guard_pro-1.1.0.tar.gz. Feel free to replace 1.1.0 with the version you need.
 - Supported Systems: Compatible with Linux, macOS, and Windows (using WSL or similar).
