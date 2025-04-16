@@ -51,5 +51,5 @@ Once you've installed it, tap into the full potential of emqx_guard_pro:
 
 These sections guide you through advanced features and integration with your systems.
 
-- [Explore Features →](/emqx-guard-pro/features/alarm)
-- [Configure Notification →](/emqx-guard-pro/configuration/gmail)
+- [Explore Features →](/EMQX-Guard-Pro/features/alarm)
+- [Configure Notification →](/EMQX-Guard-Pro/configuration/Gmail)

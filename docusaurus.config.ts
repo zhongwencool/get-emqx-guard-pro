@@ -11,21 +11,6 @@ const plugins = [
     '@docusaurus/plugin-client-redirects',
     {
       redirects: [
-        // Redirect from old URL structure to new URL structure
-        {
-          from: '/docs/EMQX-Guard-Pro/:path*',
-          to: '/emqx-guard-pro/:path*',
-        },
-        // Redirect from uppercase to lowercase URLs
-        {
-          from: '/EMQX-Guard-Pro/:path*',
-          to: '/emqx-guard-pro/:path*',
-        },
-        // Redirect from old Quick Start to new Installation page
-        {
-          from: '/emqx-guard-pro/Quick_Start',
-          to: '/emqx-guard-pro/installation',
-        },
       ],
     },
   ],
@@ -48,8 +33,8 @@ const config: Config = {
   organizationName: 'zhongwencool', // Usually your GitHub org/user name.
   projectName: 'emqx_guard_pro', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/emqx-guard-pro/introduction">
+            to="/EMQX-Guard-Pro/introduction">
             EMQX Guard Pro Tutorial - 5min ⏱️
           </Link>
         </div>

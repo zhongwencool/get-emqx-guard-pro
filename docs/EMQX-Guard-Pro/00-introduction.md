@@ -54,7 +54,7 @@ EMQX Guard Pro is your intelligent monitoring companion that transforms complex 
 2. Configure your notification preferences
 3. Let EMQX Guard Pro handle the rest
 
-Ready to transform how you manage your EMQX cluster? [Start your journey here →](/emqx-guard-pro/installation)
+Ready to transform how you manage your EMQX cluster? [Start your journey here →](/EMQX-Guard-Pro/installation)
 
 :::tip
 Join our [community Discord](https://discord.gg/d6mEs9VzUc) to connect with other EMQX users and get expert support!

@@ -35,4 +35,4 @@ This ensures that administrators are immediately aware of any changes happening 
 
 
 Ready to upgrade your EMQX management experience?
-Dive into and [take control of your configuration changes today!](/emqx-guard-pro/configuration/gmail)
+Dive into and [take control of your configuration changes today!](/EMQX-Guard-Pro/configuration/Gmail)
