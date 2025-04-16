@@ -100,6 +100,12 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Disable dark mode switch
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     // Replace with your project's social card
     image: 'img/emqx-dev-social-card.png',
     navbar: {
