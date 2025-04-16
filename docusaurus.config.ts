@@ -7,7 +7,23 @@ const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 
 const plugins = [
   tailwindPlugin,
-
+  [
+    '@docusaurus/plugin-client-redirects',
+    {
+      redirects: [
+        // Redirect from old URL structure to new URL structure
+        {
+          from: '/docs/EMQX-Guard-Pro/:path*',
+          to: '/EMQX-Guard-Pro/:path*',
+        },
+        // Redirect from old Quick Start to new Installation page
+        {
+          from: '/EMQX-Guard-Pro/Quick_Start',
+          to: '/EMQX-Guard-Pro/Installation',
+        },
+      ],
+    },
+  ],
 ];
 
 const config: Config = {
@@ -54,6 +70,8 @@ const config: Config = {
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
+          // Set routeBasePath to empty string to remove /docs/ from URLs
+          routeBasePath: '',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
