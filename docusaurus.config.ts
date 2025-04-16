@@ -14,12 +14,17 @@ const plugins = [
         // Redirect from old URL structure to new URL structure
         {
           from: '/docs/EMQX-Guard-Pro/:path*',
-          to: '/EMQX-Guard-Pro/:path*',
+          to: '/emqx-guard-pro/:path*',
+        },
+        // Redirect from uppercase to lowercase URLs
+        {
+          from: '/EMQX-Guard-Pro/:path*',
+          to: '/emqx-guard-pro/:path*',
         },
         // Redirect from old Quick Start to new Installation page
         {
-          from: '/EMQX-Guard-Pro/Quick_Start',
-          to: '/EMQX-Guard-Pro/Installation',
+          from: '/emqx-guard-pro/Quick_Start',
+          to: '/emqx-guard-pro/installation',
         },
       ],
     },
