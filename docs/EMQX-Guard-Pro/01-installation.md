@@ -1,3 +1,8 @@
+---
+title: Installation
+sidebar_label: 🔧 Installation
+---
+
 # Installation
 
 ## What is emqx_guard_pro ?
