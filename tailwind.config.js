@@ -7,7 +7,7 @@ module.exports = {
     container: false,
   },
   darkMode: ['class', '[data-theme="dark"]'],
-  content: ['./src/**/*.{jsx,tsx,html}'],
+  content: ['./src/**/*.{jsx,tsx,html,js,ts,css}', './docs/**/*.{md,mdx}'],
   theme: {
     extend: {
       fontFamily: {

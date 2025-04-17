@@ -11,15 +11,28 @@ const plugins = [
     '@docusaurus/plugin-client-redirects',
     {
       redirects: [
+        {
+          from: '/EMQX-Guard-Pro/index',
+          to: '/EMQX-Guard-Pro/',
+        },
       ],
+      createRedirects: function (existingPath: string) {
+        // 如果访问 /EMQX-Guard-Pro/index，重定向到 /EMQX-Guard-Pro/
+        if (existingPath.includes('/EMQX-Guard-Pro/')) {
+          return [
+            existingPath.replace('/EMQX-Guard-Pro/', '/EMQX-Guard-Pro/index'),
+          ];
+        }
+        return undefined;
+      },
     },
   ],
 ];
 
 const config: Config = {
   plugins,
-  title: 'EMQX.DEV',
-  tagline: 'Master EMQX From Beginner To Professional',
+  title: 'Guard Documentation',
+  tagline: 'The professional monitoring and alerting solution for EMQX clusters',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -120,9 +133,9 @@ const config: Config = {
       },
     ],
     navbar: {
-      title: 'EMQX.DEV',
+      title: 'Guard',
       logo: {
-        alt: 'EMQX.DEV Logo',
+        alt: 'EMQX Guard Logo',
         src: 'img/logo.png',
       },
       items: [
@@ -130,7 +143,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Guide',
+          label: 'Guides',
         },
         //{ to: '/blog', label: 'Blog', position: 'left' },
         {

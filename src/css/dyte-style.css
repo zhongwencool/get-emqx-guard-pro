@@ -1,0 +1,74 @@
+/* Dyte-like styles for the Guard documentation */
+
+/* Card layout styles */
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.homepage-card {
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--docs-color-text);
+  --ifm-link-hover-decoration: none;
+  --ifm-link-hover-color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-width: 1px;
+  border-color: var(--docs-color-border);
+  background-color: var(--docs-color-background-100);
+  transition-property: background-color, color;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-card:hover {
+  background-color: var(--docs-color-background-200);
+}
+
+.homepage-card .icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-card .icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--docs-color-primary);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-content .title {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+
+.card-content .description {
+  font-size: 14px;
+  color: var(--docs-color-text-100);
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .section-content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

@@ -1,38 +1,13 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
+import {useEffect} from 'react';
+import {useHistory} from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 import Head from '@docusaurus/Head';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/EMQX-Guard-Pro/introduction">
-            EMQX Guard Pro Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): ReactNode {
+export default function Home() {
+  const history = useHistory();
   const {siteConfig} = useDocusaurusContext();
 
+  // JSON-LD for SEO
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -60,22 +35,19 @@ export default function Home(): ReactNode {
     ]
   };
 
+  useEffect(() => {
+    // Redirect to the Guard documentation page
+    history.replace('/EMQX-Guard-Pro/');
+  }, [history]);
+
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="EMQX Guard Pro documentation - The professional monitoring and alerting solution for EMQX clusters.">
-      <Head>
-        <script type="application/ld+json">
-          {JSON.stringify(websiteJsonLd)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(organizationJsonLd)}
-        </script>
-      </Head>
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <Head>
+      <script type="application/ld+json">
+        {JSON.stringify(websiteJsonLd)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(organizationJsonLd)}
+      </script>
+    </Head>
   );
 }
