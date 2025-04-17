@@ -55,7 +55,7 @@ const config: Config = {
           filename: 'sitemap.xml',
         },
         gtag: {
-          trackingID: '	G-R31D2RQNVN',
+          trackingID: 'G-R31D2RQNVN',
           anonymizeIP: true,
         },
         docs: {
@@ -98,6 +98,27 @@ const config: Config = {
     },
     // Replace with your project's social card
     image: 'img/emqx-dev-social-card.png',
+    metadata: [
+      { name: 'description', content: 'EMQX Guard Pro documentation - The professional monitoring and alerting solution for EMQX clusters.' },
+      { name: 'keywords', content: 'EMQX, MQTT, IoT, monitoring, alerting, Guard Pro' },
+      { name: 'author', content: 'zhongwencool' },
+    ],
+    headTags: [
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'manifest',
+          href: '/manifest.webmanifest',
+        },
+      },
+      {
+        tagName: 'meta',
+        attributes: {
+          name: 'theme-color',
+          content: '#4a89dc',
+        },
+      },
+    ],
     navbar: {
       title: 'EMQX.DEV',
       logo: {

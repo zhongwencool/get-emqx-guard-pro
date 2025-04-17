@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import Head from '@docusaurus/Head';
 
 import styles from './index.module.css';
 
@@ -31,10 +32,46 @@ function HomepageHeader() {
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": siteConfig.title,
+    "url": siteConfig.url,
+    "description": "EMQX Guard Pro documentation - The professional monitoring and alerting solution for EMQX clusters.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${siteConfig.url}?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EMQX",
+    "url": siteConfig.url,
+    "logo": `${siteConfig.url}img/logo.png`,
+    "sameAs": [
+      "https://github.com/zhongwencool/get-emqx-guard-pro"
+    ]
+  };
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="EMQX Guard Pro documentation - The professional monitoring and alerting solution for EMQX clusters.">
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(websiteJsonLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationJsonLd)}
+        </script>
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

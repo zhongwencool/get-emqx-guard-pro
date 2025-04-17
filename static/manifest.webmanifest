@@ -1,0 +1,21 @@
+{
+  "name": "EMQX.DEV",
+  "short_name": "EMQX.DEV",
+  "description": "EMQX Guard Pro documentation - The professional monitoring and alerting solution for EMQX clusters.",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#4a89dc",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
