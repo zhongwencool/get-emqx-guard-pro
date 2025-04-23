@@ -1,6 +1,6 @@
 ---
 title: Guard Documentation
-sidebar_label: Guides
+sidebar_label: emqx_guard_pro
 description: "EMQX Guard Pro documentation - The professional monitoring and alerting solution for EMQX clusters."
 keywords: ["EMQX monitoring", "MQTT security", "EMQX plugin", "IoT monitoring", "MQTT broker security", "MQTT performance", "EMQX alerts", "MQTT monitoring tool", "EMQX cluster management"]
 ---

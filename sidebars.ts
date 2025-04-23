@@ -18,7 +18,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       id: 'EMQX-Guard-Pro/index',
-      label: 'Guides',
+      label: 'emqx_guard_pro',
     },
     {
       type: 'category',

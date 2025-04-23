@@ -11,10 +11,6 @@ const plugins = [
     '@docusaurus/plugin-client-redirects',
     {
       redirects: [
-        {
-          from: '/EMQX-Guard-Pro/index',
-          to: '/EMQX-Guard-Pro/',
-        },
       ],
       createRedirects: function (existingPath: string) {
         // 如果访问 /EMQX-Guard-Pro/index，重定向到 /EMQX-Guard-Pro/
@@ -143,6 +139,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
+          label: "emqx_guard_pro",
         },
         //{ to: '/blog', label: 'Blog', position: 'left' },
         {
