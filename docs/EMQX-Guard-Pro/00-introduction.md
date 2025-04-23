@@ -8,11 +8,11 @@ keywords: ["EMQX monitoring", "MQTT security", "EMQX plugin", "IoT monitoring", 
 
 ## Are These Challenges Familiar?
 
-- 🤔 "How do I know if my MQTT broker is running optimally?"
-- 😰 "What if someone changes critical EMQX configurations without notice?"
-- 💭 "Am I following MQTT security best practices?"
-- 🔍 "How can I detect potential issues before they affect my IoT devices?"
-- ⚡ "Why did my MQTT connection suddenly drop?"
+- 🤔 How do I know if my MQTT broker is running optimally?
+- 😰 What if someone changes critical EMQX configurations without notice?
+- 💭 Am I following MQTT security best practices?
+- 🔍 How can I detect potential issues before they affect my IoT devices?
+- ⚡ Why did my MQTT connection suddenly drop?
 
 If you've faced any of these questions, you're not alone. While EMQX is powerful and reliable, managing a production MQTT infrastructure comes with its unique challenges.
 
