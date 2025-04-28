@@ -11,20 +11,6 @@ keywords: ["EMQX monitoring", "MQTT security", "EMQX plugin", "IoT monitoring", 
 Learn how to integrate monitoring and alerting capabilities into your EMQX cluster.
 
 <div className="section-content">
-  <a className="homepage-card" href="/EMQX-Guard-Pro/installation">
-    <div className="icon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 15V3M12 15L8 11M12 15L16 11M2 17L2.621 19.485C2.72915 19.9177 2.97882 20.3018 3.33033 20.5763C3.68184 20.8508 4.11501 20.9999 4.561 21H19.439C19.885 20.9999 20.3182 20.8508 20.6697 20.5763C21.0212 20.3018 21.2708 19.9177 21.379 19.485L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    </div>
-    <div className="card-content">
-      <div className="title">Installation</div>
-      <div className="description">
-        Get started with EMQX Guard Pro in minutes
-      </div>
-    </div>
-  </a>
-
   <a className="homepage-card" href="/EMQX-Guard-Pro/introduction">
     <div className="icon">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,6 +21,19 @@ Learn how to integrate monitoring and alerting capabilities into your EMQX clust
       <div className="title">Introduction</div>
       <div className="description">
         Learn about EMQX Guard Pro and its capabilities
+      </div>
+    </div>
+  </a>
+  <a className="homepage-card" href="/EMQX-Guard-Pro/installation">
+    <div className="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 15V3M12 15L8 11M12 15L16 11M2 17L2.621 19.485C2.72915 19.9177 2.97882 20.3018 3.33033 20.5763C3.68184 20.8508 4.11501 20.9999 4.561 21H19.439C19.885 20.9999 20.3182 20.8508 20.6697 20.5763C21.0212 20.3018 21.2708 19.9177 21.379 19.485L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </div>
+    <div className="card-content">
+      <div className="title">Installation</div>
+      <div className="description">
+        Get started with EMQX Guard Pro in minutes
       </div>
     </div>
   </a>
@@ -111,6 +110,36 @@ Learn how to use key features of Guard, such as monitoring, alerting, and securi
       <div className="title">Inconsistent Configuration</div>
       <div className="description">
         Identify inconsistencies across your cluster nodes
+      </div>
+    </div>
+  </a>
+
+  <a className="homepage-card" href="/EMQX-Guard-Pro/features/auto_backup">
+    <div className="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 9V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V9M4 9L2 7M4 9L6 7M20 9L18 7M20 9L22 7M12 12V3M12 3L8 7M12 3L16 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </div>
+    <div className="card-content">
+      <div className="title">Auto Backup</div>
+      <div className="description">
+        Automatic scheduled backups of your EMQX cluster
+      </div>
+    </div>
+  </a>
+
+  <a className="homepage-card" href="/EMQX-Guard-Pro/features/conn_congestion_trace">
+    <div className="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 13.125C3 12.5037 3.50368 12 4.125 12H6.375C6.99632 12 7.5 12.5037 7.5 13.125V19.875C7.5 20.4963 6.99632 21 6.375 21H4.125C3.50368 21 3 20.4963 3 19.875V13.125Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9.75 8.625C9.75 8.00368 10.2537 7.5 10.875 7.5H13.125C13.7463 7.5 14.25 8.00368 14.25 8.625V19.875C14.25 20.4963 13.7463 21 13.125 21H10.875C10.2537 21 9.75 20.4963 9.75 19.875V8.625Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M16.5 4.125C16.5 3.50368 17.0037 3 17.625 3H19.875C20.4963 3 21 3.50368 21 4.125V19.875C21 20.4963 20.4963 21 19.875 21H17.625C17.0037 21 16.5 20.4963 16.5 19.875V4.125Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </div>
+    <div className="card-content">
+      <div className="title">Connection Congestion Trace</div>
+      <div className="description">
+        Monitor and manage MQTT client message rates
       </div>
     </div>
   </a>

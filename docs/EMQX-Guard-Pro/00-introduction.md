@@ -22,6 +22,8 @@ Setting up an EMQX cluster is a breeze, but to truly unlock its full potential f
 
 EMQX Guard Pro is your intelligent monitoring companion that transforms complex MQTT infrastructure management into a seamless experience. It's like having a 24/7 expert team watching over your EMQX deployment, but without the overhead.
 
+EMQX Guard Pro is designed for seamless integration. You can configure and integrate it within just 1 minute, without writing any code. This user-friendly approach ensures that you can quickly set up and benefit from its powerful monitoring and security features.
+
 ### What Problems Does It Solve?
 
 #### 1. Proactive Issue Detection

@@ -5,15 +5,9 @@ sidebar_label: 🔧 Installation
 
 # Installation
 
-## What is emqx_guard_pro ?
-
-emqx_guard_pro is a smart monitoring plugin designed for EMQX MQTT clusters, built on the [EMQX plugin framework](https://docs.emqx.com/en/emqx/latest/extensions/plugins.html). It makes cluster monitoring a breeze, providing a smooth and hassle-free experience for developers, operations teams, and IoT engineers alike.
-
-## Installation
-
 ### Download via Releases Directory
 To get started with emqx_guard_pro, simply download the latest version from the
-[the Donwloads page](https://emqx.dev/downloads).
+[The Donwloads Page](https://emqx.dev/downloads).
 
 ### Install via Dashboard
 

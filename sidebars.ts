@@ -54,6 +54,8 @@ const sidebars: SidebarsConfig = {
         'EMQX-Guard-Pro/features/risk_configuration',
         'EMQX-Guard-Pro/features/duplicate_configuration',
         'EMQX-Guard-Pro/features/inconsistent_configuration',
+        'EMQX-Guard-Pro/features/auto_backup',
+        'EMQX-Guard-Pro/features/conn_congestion_trace',
       ],
     },
     {
